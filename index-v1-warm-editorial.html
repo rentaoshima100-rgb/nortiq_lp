@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NORTIQ LABS｜米国の技術水準を、日本の中小企業の武器に｜株式会社TAKE</title>
+<meta name="description" content="Web制作・AIチャットボット・DX/ML実装まで、米国大学出身の少数精鋭チームが段階的に伴走するDXパートナー。20社+の制作・DX支援実績。営業日24時間以内に返信。" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+
+<!-- React + Babel for FAQ + Tweaks -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ───────────── NAV ───────────── -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand" aria-label="NORTIQ LABS">
+    <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true">
+      <rect x="2" y="2" width="28" height="28" rx="6" fill="currentColor"/>
+      <path d="M9 22V10l14 12V10" fill="none" stroke="var(--cream)" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+    </svg>
+    <span class="nav__word">NORTIQ <em>LABS</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#services">サービス</a>
+    <a href="#why">世界水準の根拠</a>
+    <a href="#cases">事例</a>
+    <a href="#pricing">料金</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a href="#contact" class="btn btn--primary nav__cta">
+    <span>資料請求（無料）</span>
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+  </a>
+</header>
+
+<main id="top">
+
+<!-- ───────────── HERO ───────────── -->
+<section class="hero">
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <div class="eyebrow">
+        <span class="eyebrow__dot"></span>
+        <span>NORTIQ LABS — 株式会社TAKE / Kyoto, Japan</span>
+      </div>
+
+      <h1 class="hero__h1">
+        <span>日本のDX、</span>
+        <span>世界水準で</span>
+        <span class="hero__h1-accent">巻き返す。<span class="hero__period"></span></span>
+      </h1>
+
+      <p class="hero__sub">
+        米国の技術水準を、日本の中小企業の武器に。<br />
+        Web制作・AIチャットボット・DX/ML実装まで、<br />
+        <strong>米国大学出身の少数精鋭チーム</strong>が段階的に伴走します。
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary btn--lg">
+          <span>サービス資料を請求する</span>
+          <small>無料・1営業日以内に返信</small>
+        </a>
+        <a href="#diagnosis" class="btn btn--ghost btn--lg">
+          <span>ホームページ無料診断</span>
+          <small>30項目チェックリスト</small>
+        </a>
+      </div>
+
+      <div class="hero__caption">
+        <span>営業日24時間以内に一次返信</span>
+        <span class="hero__caption-sep">／</span>
+        <span>オンライン全国対応</span>
+        <span class="hero__caption-sep">／</span>
+        <span>営業のための営業はしません</span>
+      </div>
+    </div>
+
+    <aside class="hero__panel" aria-label="信頼指標">
+      <div class="panel__head">
+        <span class="panel__label">BY THE NUMBERS</span>
+        <span class="panel__year">FY2025 — 2026</span>
+      </div>
+      <ul class="panel__stats">
+        <li>
+          <div class="stat__val">20<sup>+</sup></div>
+          <div class="stat__lbl">制作・DX支援実績<br /><em>clients delivered</em></div>
+        </li>
+        <li>
+          <div class="stat__val">80<sub>%</sub></div>
+          <div class="stat__lbl">米国大学出身（5名中4名）<br /><em>core team from US universities</em></div>
+        </li>
+        <li>
+          <div class="stat__val">¥30<sup>万〜</sup></div>
+          <div class="stat__lbl">Web制作 開始価格<br /><em>web build starts at</em></div>
+        </li>
+        <li>
+          <div class="stat__val">24<sub>h</sub></div>
+          <div class="stat__lbl">一次返信SLA<br /><em>business-day response</em></div>
+        </li>
+      </ul>
+      <div class="panel__foot">
+        <svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="6" cy="6" r="2" fill="currentColor"/></svg>
+        <span>Built in Kyoto · Engineered with U.S. discipline</span>
+      </div>
+    </aside>
+  </div>
+
+  <!-- marquee strip -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>CLINIC / 医療</span><span>・</span>
+      <span>REAL ESTATE / 不動産</span><span>・</span>
+      <span>ARCHITECTURE / 建築</span><span>・</span>
+      <span>HUMAN RESOURCES / 人材</span><span>・</span>
+      <span>RETAIL &amp; EC / 小売</span><span>・</span>
+      <span>INFRASTRUCTURE / インフラ</span><span>・</span>
+      <span>MEDIA STARTUP</span><span>・</span>
+      <span>CROSS-BORDER COMMERCE</span><span>・</span>
+      <span>CLINIC / 医療</span><span>・</span>
+      <span>REAL ESTATE / 不動産</span><span>・</span>
+      <span>ARCHITECTURE / 建築</span><span>・</span>
+      <span>HUMAN RESOURCES / 人材</span><span>・</span>
+      <span>RETAIL &amp; EC / 小売</span><span>・</span>
+      <span>INFRASTRUCTURE / インフラ</span><span>・</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────── PAIN POINTS ───────────── -->
+<section class="pain" id="pain">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__tag">
+        <span>01</span>
+        <span>こんなお悩み、ありませんか？</span>
+      </div>
+      <h2 class="section-head__h2">
+        Web制作からAI・DXまで、<br />
+        中小企業の現場で<em>よく聞く声</em>を集めました。
+      </h2>
+    </div>
+
+    <ul class="pain__list">
+      <li>
+        <span class="pain__num">01</span>
+        <p>古いホームページのまま、問い合わせが減ってきている</p>
+      </li>
+      <li>
+        <span class="pain__num">02</span>
+        <p>経営層から「ウチもAIを活用しろ」と言われたが、<br/>何から始めればいいか分からない</p>
+      </li>
+      <li>
+        <span class="pain__num">03</span>
+        <p>大手SIerに見積もりを取ったら桁が一桁多くて手が出ない。<br />かといってフリーランスは、品質と継続性が不安</p>
+      </li>
+      <li>
+        <span class="pain__num">04</span>
+        <p>WordPressブログの更新が止まっている。<br />「書く時間が取れない」「書ける気がしない」</p>
+      </li>
+      <li>
+        <span class="pain__num">05</span>
+        <p>Web制作だけでなく、運用・改善まで<br />一気通貫で頼める先がない</p>
+      </li>
+      <li>
+        <span class="pain__num">06</span>
+        <p>「米国の最新技術」を取り入れたいが、<br />日本の現場に翻案してくれる相手がいない</p>
+      </li>
+    </ul>
+
+    <p class="pain__close">
+      <span class="pain__close-mark">↳</span>
+      その状況、よく分かります。<br />
+      <strong>Web制作 → AIチャットボット → DX/ML の3段階</strong>で、御社のペースに合わせて伴走します。
+    </p>
+  </div>
+</section>
+
+
+<!-- ───────────── 3-STEP FUNNEL ───────────── -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <div class="section-head__tag">
+        <span>02</span>
+        <span>SERVICE FUNNEL</span>
+      </div>
+      <h2 class="section-head__h2">
+        Web → AI → DX、<br />
+        <em>段階的に伴走</em>します。
+      </h2>
+      <p class="section-head__lead">
+        いきなり大型のDX投資はしません。Step 1 の Web制作から始めて、<br />
+        段階的にAI・DXへ拡張するのが私たちの基本姿勢です。
+      </p>
+    </div>
+
+    <ol class="funnel">
+      <li class="funnel__step funnel__step--01">
+        <div class="funnel__head">
+          <span class="funnel__step-num">STEP 01</span>
+          <span class="funnel__tag">FOUNDATION</span>
+        </div>
+        <h3>Web制作</h3>
+        <p class="funnel__lead">集客と問い合わせ獲得を前提とした、現代的なWebサイト。WordPress / Next.js から最適選定。</p>
+        <ul class="funnel__bullets">
+          <li>業種別の専門コンテンツテンプレ</li>
+          <li>Core Web Vitals Good を標準担保</li>
+          <li>運用・保守プランまで一気通貫</li>
+        </ul>
+        <div class="funnel__price">
+          <span class="funnel__price-num">¥300,000</span>
+          <span class="funnel__price-unit">〜</span>
+        </div>
+      </li>
+
+      <li class="funnel__arrow" aria-hidden="true">
+        <svg viewBox="0 0 60 12"><path d="M0 6h54M48 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+      </li>
+
+      <li class="funnel__step funnel__step--02">
+        <div class="funnel__head">
+          <span class="funnel__step-num">STEP 02</span>
+          <span class="funnel__tag funnel__tag--popular">★ 人気</span>
+        </div>
+        <h3>AIチャットボット</h3>
+        <p class="funnel__lead">「WordPress更新が止まる」を解決する内製プロダクト。質問するだけで記事が書ける。</p>
+        <ul class="funnel__bullets">
+          <li>対話式UIで8ステップ投稿フロー</li>
+          <li>SEO最適化＋競合分析を内蔵</li>
+          <li>非技術者の「書ける気がしない」を解消</li>
+        </ul>
+        <div class="funnel__price">
+          <span class="funnel__price-num">¥100,000</span>
+          <span class="funnel__price-unit">〜</span>
+        </div>
+      </li>
+
+      <li class="funnel__arrow" aria-hidden="true">
+        <svg viewBox="0 0 60 12"><path d="M0 6h54M48 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+      </li>
+
+      <li class="funnel__step funnel__step--03">
+        <div class="funnel__head">
+          <span class="funnel__step-num">STEP 03</span>
+          <span class="funnel__tag">SCALE</span>
+        </div>
+        <h3>DX・ML</h3>
+        <p class="funnel__lead">ML実装 / 業務自動化 / データ分析基盤 / 生成AI業務組み込み。</p>
+        <ul class="funnel__bullets">
+          <li>Computer Vision／RAG／エージェント</li>
+          <li>Human-in-the-loop 設計</li>
+          <li>内製化引き継ぎまでセット</li>
+        </ul>
+        <div class="funnel__price">
+          <span class="funnel__price-num">¥500,000</span>
+          <span class="funnel__price-unit">〜</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- ───────────── WORLD-CLASS WHY ───────────── -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__tag section-head__tag--dark">
+        <span>03</span>
+        <span>WORLD-CLASS, EXPLAINED</span>
+      </div>
+      <h2 class="section-head__h2">
+        なぜ「世界水準」と<br />
+        言えるのか<span class="qmark">。</span>
+      </h2>
+      <p class="section-head__lead">
+        抽象的な「世界水準」ではなく、<em>具体的な3つの根拠</em>でご説明します。
+      </p>
+    </div>
+
+    <div class="why__grid">
+
+      <article class="why__card">
+        <div class="why__num">01</div>
+        <h3>中核チームの<br /><span class="why__hl">80%が米国大学出身</span></h3>
+        <p>
+          5名のチームのうち4名（80%）が、米国大学を卒業したエンジニア・データサイエンティスト。米国シリコンバレーで培われた最新のAI・ソフトウェアエンジニアリングを、日本の中小企業の現場に持ち込みます。
+        </p>
+        <p class="why__pull">
+          「2年前のAI事例で語る」ことはしません。米国の最前線で出ている技術を、御社の業務に合わせて<u>翻案</u>します。
+        </p>
+        <div class="why__meta">
+          <span>4 / 5 members</span>
+          <span>US-educated engineers</span>
+        </div>
+      </article>
+
+      <article class="why__card">
+        <div class="why__num">02</div>
+        <h3>Web → AI → DX の<br /><span class="why__hl">段階的伴走</span></h3>
+        <p>
+          「いきなり大型のDX投資」は失敗の元です。Web制作（30万円〜）から始めて、AIチャットボット（10万円〜）、DX・ML（50万円〜）へと、御社のペースに合わせて段階的に拡張。
+        </p>
+        <p class="why__pull">
+          最初の一手は<u>小さく</u>、確実に成果を出してから次へ進める設計です。
+        </p>
+        <div class="why__meta">
+          <span>3-stage funnel</span>
+          <span>start small · prove · scale</span>
+        </div>
+      </article>
+
+      <article class="why__card">
+        <div class="why__num">03</div>
+        <h3>自社プロダクト<br /><span class="why__hl">×&nbsp;研究背景</span></h3>
+        <p>
+          WP AIチャットボット（WordPress記事生成）、VetoNet（AI Security 研究）、Tennis フォームチェックなど、社内で自社プロダクトを開発・運用しています。
+        </p>
+        <p class="why__pull">
+          「人に売っている技術を、<u>自分たちでも使っている</u>」状態が私たちの強み。受託開発だけのチームとは違います。
+        </p>
+        <div class="why__meta">
+          <span>VetoNet</span><span>WP AI Bot</span><span>Tennis Form</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="why__strip">
+      <div>
+        <span class="why__strip-k">Kyoto, JP</span>
+        <span class="why__strip-v">本拠地</span>
+      </div>
+      <div>
+        <span class="why__strip-k">2025</span>
+        <span class="why__strip-v">設立</span>
+      </div>
+      <div>
+        <span class="why__strip-k">5 / 4</span>
+        <span class="why__strip-v">チーム / 米国大学出身</span>
+      </div>
+      <div>
+        <span class="why__strip-k">Nationwide</span>
+        <span class="why__strip-v">オンライン全国対応</span>
+      </div>
+      <div>
+        <span class="why__strip-k">≤ 24h</span>
+        <span class="why__strip-v">一次返信SLA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────── FEATURED CASE ───────────── -->
+<section class="cases" id="cases">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__tag">
+        <span>04</span>
+        <span>SELECTED CASE STUDIES</span>
+      </div>
+      <h2 class="section-head__h2">
+        20社+の<em>現場に合わせた実装</em>。<br />
+        一部をご紹介します。
+      </h2>
+    </div>
+
+    <article class="case-feat">
+      <header class="case-feat__head">
+        <span class="case-feat__id">CASE 01</span>
+        <span class="case-feat__tag">FEATURED</span>
+      </header>
+      <div class="case-feat__grid">
+        <div class="case-feat__main">
+          <h3>メディアスタートアップ<br /><span>AI伴走型 ブログ投稿アシスタント</span></h3>
+          <dl class="case-feat__facts">
+            <div><dt>業種</dt><dd>メディア・コンテンツ事業</dd></div>
+            <div><dt>規模</dt><dd>スタートアップ</dd></div>
+            <div><dt>適用</dt><dd>生成AI導入 × UI/UX設計 × 実装</dd></div>
+            <div><dt>期間</dt><dd>約2ヶ月</dd></div>
+          </dl>
+
+          <div class="case-feat__row">
+            <h4><span>■</span> 課題</h4>
+            <p>WordPressは非技術者には複雑すぎ、社内発信担当が記事を書くハードルが高かった。「書ける気がしない」状態。</p>
+          </div>
+
+          <div class="case-feat__row">
+            <h4><span>■</span> アプローチ</h4>
+            <p>非技術者向けのAI伴走型ブログ投稿UIをゼロから設計・実装。</p>
+            <ul>
+              <li>AIが対話形式で要約・SEO最適化・競合分析までサポート</li>
+              <li>8ステップ式UIで誤投稿防止（AIが3つの確認ポイントで停止）</li>
+              <li>SEO最適化＋競合分析を4カード型UIに統合</li>
+              <li>3パターン（PC×2 + モバイル）の実装</li>
+            </ul>
+          </div>
+
+          <div class="case-feat__row">
+            <h4><span>■</span> 成果</h4>
+            <p>「書ける気がしない」を解消する、AIが伴走するブログ投稿基盤を構築。非技術者でもAIと対話するだけで、SEO最適化された記事を公開できるように。</p>
+            <p class="case-feat__note">※ 詳細な効果（公開頻度・所要時間削減率）は現在測定中。ご相談時に最新数値をお伝えします。</p>
+          </div>
+        </div>
+
+        <aside class="case-feat__side">
+          <div class="case-feat__viz" aria-hidden="true">
+            <div class="viz__head">
+              <span class="viz__dot"></span><span class="viz__dot"></span><span class="viz__dot"></span>
+              <span class="viz__title">writer · ai-assist</span>
+            </div>
+            <div class="viz__body">
+              <div class="viz__step viz__step--done"><span>01</span>テーマ入力</div>
+              <div class="viz__step viz__step--done"><span>02</span>要約生成</div>
+              <div class="viz__step viz__step--active"><span>03</span>競合分析<i></i></div>
+              <div class="viz__step"><span>04</span>SEO最適化</div>
+              <div class="viz__step"><span>05</span>構成案</div>
+              <div class="viz__step"><span>06</span>本文生成</div>
+              <div class="viz__step"><span>07</span>確認 / 編集</div>
+              <div class="viz__step"><span>08</span>公開</div>
+            </div>
+            <div class="viz__foot">
+              <span>AI · stop @ 3 checkpoints</span>
+              <span>v3.2</span>
+            </div>
+          </div>
+          <blockquote class="case-feat__quote">
+            「"書ける気がしない"を解消する、AIが伴走するブログ投稿基盤」
+          </blockquote>
+        </aside>
+      </div>
+    </article>
+
+    <!-- Case 2 -->
+    <article class="case-feat case-feat--alt">
+      <header class="case-feat__head">
+        <span class="case-feat__id">CASE 02</span>
+        <span class="case-feat__tag">AGENT × VISION</span>
+      </header>
+      <div class="case-feat__grid">
+        <aside class="case-feat__side">
+          <div class="case-feat__viz case-feat__viz--vision" aria-hidden="true">
+            <div class="viz__head">
+              <span class="viz__dot"></span><span class="viz__dot"></span><span class="viz__dot"></span>
+              <span class="viz__title">pos · vision-agent</span>
+            </div>
+            <div class="vision__cam">
+              <div class="vision__box vision__box--a"><span>商品A</span><i>98.4%</i></div>
+              <div class="vision__box vision__box--b"><span>商品B</span><i>72.1%</i></div>
+              <div class="vision__crosshair"></div>
+            </div>
+            <div class="vision__row">
+              <span class="vision__chip vision__chip--ok">AUTO</span>
+              <span class="vision__chip vision__chip--warn">HUMAN CHECK</span>
+              <span class="vision__chip">POS SYNC</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="case-feat__main">
+          <h3>小売店<br /><span>AI画像認識による商品検知・レジ対応</span></h3>
+          <dl class="case-feat__facts">
+            <div><dt>業種</dt><dd>小売（バーコードなし業態）</dd></div>
+            <div><dt>規模</dt><dd>中小規模店舗</dd></div>
+            <div><dt>適用</dt><dd>AIエージェント × 業務システム統合</dd></div>
+            <div><dt>状況</dt><dd>開発・運用中</dd></div>
+          </dl>
+
+          <div class="case-feat__row">
+            <h4><span>■</span> 課題</h4>
+            <p>商品にバーコードがなく、新商品が次々入荷するためレジで都度手入力。レジ待ちの長期化と打ち間違いが頻発。</p>
+          </div>
+
+          <div class="case-feat__row">
+            <h4><span>■</span> アプローチ</h4>
+            <p>カメラによる画像検知 + Human Check のハイブリッド設計で、AIと人の役割分担を最適化。</p>
+            <ul>
+              <li>Computer Vision で商品認識</li>
+              <li>不確実なケースは Human-in-the-loop で確認</li>
+              <li>POS（レジ）まで自動連携</li>
+              <li>新商品の追加学習がスピーディな設計</li>
+            </ul>
+          </div>
+
+          <div class="case-feat__row">
+            <h4><span>■</span> 成果</h4>
+            <p>バーコードレス商品のレジ業務をAIで自動化。</p>
+            <p class="case-feat__note">※ 数値効果は現在運用しながら測定中。ご相談時に最新数値をお伝えします。</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <h3 class="cases__sub">他の制作・DX実績</h3>
+
+    <div class="cases__grid">
+      <a class="case-card" href="#contact">
+        <div class="case-card__id">03</div>
+        <h4>外国人材組合<br />（Asia Exchange Cooperative）</h4>
+        <p>組合の総合刷新。高い技術と安全性を実装。</p>
+        <span class="case-card__tag">人材・組合</span>
+      </a>
+      <a class="case-card" href="#contact">
+        <div class="case-card__id">04</div>
+        <h4>不動産投資ブランド<br />PLEAST</h4>
+        <p>新時代の不動産投資ブランド構築。他社は提案止まり、Nortiq は実装まで。</p>
+        <span class="case-card__tag">不動産</span>
+      </a>
+      <a class="case-card" href="#contact">
+        <div class="case-card__id">05</div>
+        <h4>建築・リニューアル<br />×大規模修繕</h4>
+        <p>建物リニューアル × 大規模修繕の総合刷新。工数38%減で現場が回り始めた。</p>
+        <span class="case-card__tag">建築</span>
+      </a>
+      <a class="case-card" href="#contact">
+        <div class="case-card__id">06</div>
+        <h4>クリニック<br />あおぞらFamily Clinic 他</h4>
+        <p>地域密着型クリニックのリニューアル。問い合わせ 2.4倍。</p>
+        <span class="case-card__tag">医療</span>
+      </a>
+      <a class="case-card" href="#contact">
+        <div class="case-card__id">07</div>
+        <h4>RAKUYU-Z<br />工法協会サイト</h4>
+        <p>工法協会の総合サイト構築。情報設計から実装まで。</p>
+        <span class="case-card__tag">建築・協会</span>
+      </a>
+      <a class="case-card" href="#contact">
+        <div class="case-card__id">08</div>
+        <h4>越境EC<br />TAKETORA</h4>
+        <p>京都の骨董店の越境ECサイト構築。海外決済まで対応。</p>
+        <span class="case-card__tag">小売 / EC</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────── VOICES ───────────── -->
+<section class="voices">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__tag">
+        <span>05</span>
+        <span>VOICES OF CLIENTS</span>
+      </div>
+      <h2 class="section-head__h2">
+        実際にご利用いただいている<br />
+        <em>企業様の声</em>。
+      </h2>
+      <p class="section-head__lead">
+        日々いただくリアルなご意見をもとに、サービスを磨き続けています。
+      </p>
+    </div>
+
+    <div class="voices__grid">
+      <figure class="voice voice--lg">
+        <blockquote>
+          「Web制作からの付き合いで、半年後にAIチャットボットも導入しました。ブログ更新の負担がほとんどなくなり、自然検索からの流入が以前より明らかに増えています。"Webのプロが横にいる"という安心感を、初めて持てた気がします。」
+        </blockquote>
+        <figcaption>
+          <div class="voice__avatar"><span>A</span><span>K</span></div>
+          <div class="voice__person">
+            <div class="voice__name">A.K. 様</div>
+            <div class="voice__role">代表取締役・院長</div>
+            <div class="voice__industry">クリニック・医療</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="voice">
+        <blockquote>
+          「他社は『AIできます』止まりで提案書だけ。Nortiq Labs は実装の中身まで丁寧に説明してくれて、納得感がありました。米国の技術背景は伊達じゃないと感じます。」
+        </blockquote>
+        <figcaption>
+          <div class="voice__avatar"><span>T</span><span>M</span></div>
+          <div class="voice__person">
+            <div class="voice__name">T.M. 様</div>
+            <div class="voice__role">経営企画</div>
+            <div class="voice__industry">不動産投資</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="voice">
+        <blockquote>
+          「リニューアルから始めて、現場報告のデジタル化、工程管理まで段階的にお願いしました。最初の一手が小さかったので、社内の抵抗もなくスムーズに進みました。」
+        </blockquote>
+        <figcaption>
+          <div class="voice__avatar"><span>S</span><span>W</span></div>
+          <div class="voice__person">
+            <div class="voice__name">S.W. 様</div>
+            <div class="voice__role">代表</div>
+            <div class="voice__industry">建築・リニューアル</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="voice">
+        <blockquote>
+          「私たちのような小さな組織の実情を、よく理解してくれた上で提案してくれます。"米国の最新技術"というフレーズは強そうに聞こえますが、提案は地に足がついていて、現実的でした。」
+        </blockquote>
+        <figcaption>
+          <div class="voice__avatar"><span>理</span></div>
+          <div class="voice__person">
+            <div class="voice__name">担当者 様</div>
+            <div class="voice__role">理事</div>
+            <div class="voice__industry">外国人材組合</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="voice">
+        <blockquote>
+          「越境ECサイトの構築をお願いしました。海外向けの設計や決済のノウハウは、国内SIerにはない強み。今は海外からのお客様の問い合わせが定常的に入ってくるように。」
+        </blockquote>
+        <figcaption>
+          <div class="voice__avatar"><span>H</span><span>T</span></div>
+          <div class="voice__person">
+            <div class="voice__name">H.T. 様</div>
+            <div class="voice__role">代表</div>
+            <div class="voice__industry">小売・EC（越境）</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="voice voice--lg">
+        <blockquote>
+          「最初はWebサイトのリニューアルだけのつもりでしたが、運用サポートを通じて『次は何をやるべきか』を一緒に考えてくれるので、自然とAIチャットボット、業務自動化と取り組みが広がりました。"伴走してくれる"の意味が、今やっと分かった気がします。」
+        </blockquote>
+        <figcaption>
+          <div class="voice__avatar"><span>K</span><span>N</span></div>
+          <div class="voice__person">
+            <div class="voice__name">K.N. 様</div>
+            <div class="voice__role">経営者</div>
+            <div class="voice__industry">クリニック</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────── 6 POINTS ───────────── -->
+<section class="points">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__tag section-head__tag--dark">
+        <span>06</span>
+        <span>WHY NORTIQ — 6 POINTS</span>
+      </div>
+      <h2 class="section-head__h2">えらばれる<em>6つの理由</em>。</h2>
+    </div>
+
+    <div class="points__grid">
+      <article class="point">
+        <div class="point__num">01</div>
+        <h3>オリジナルデザイン</h3>
+        <p>テンプレ流用ではなく、業種・ブランドに合わせて毎回ゼロから設計。</p>
+      </article>
+      <article class="point">
+        <div class="point__num">02</div>
+        <h3>コンサル・運用サポート</h3>
+        <p>月次アクセスレポート + 定期訪問 + 改善MTG。公開後も止まりません。</p>
+      </article>
+      <article class="point">
+        <div class="point__num">03</div>
+        <h3>契約率を高める顧客管理</h3>
+        <p>ヒーロー / CTA配置 / フォーム設計まで、コンバージョン視点で構造化。</p>
+      </article>
+      <article class="point">
+        <div class="point__num">04</div>
+        <h3>業種別の専門コンテンツ</h3>
+        <p>医療・不動産・建築など、業種ごとに最適化された記事構成テンプレ。</p>
+      </article>
+      <article class="point">
+        <div class="point__num">05</div>
+        <h3>公開後の修正にも対応</h3>
+        <p>保守プラン内なら、軽微修正・テキスト変更は契約中で対応可。</p>
+      </article>
+      <article class="point">
+        <div class="point__num">06</div>
+        <h3>独自のSEO強化</h3>
+        <p>AI投稿ツール + SEO内部対策 + 業界キーワード設計を一体運用。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────── PRICING ───────────── -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <div class="section-head__tag">
+        <span>07</span>
+        <span>PRICING</span>
+      </div>
+      <h2 class="section-head__h2">3ステップ料金<span class="qmark">。</span></h2>
+      <p class="section-head__lead">
+        プロジェクトの規模・期間に応じて柔軟にご提案します。<br/>
+        詳細は資料請求 or 無料診断でご確認ください。
+      </p>
+    </div>
+
+    <div class="pricing__grid">
+      <article class="plan">
+        <header class="plan__head">
+          <span class="plan__step">STEP 01</span>
+          <h3>Web制作</h3>
+        </header>
+        <div class="plan__price">
+          <span class="plan__price-from">FROM</span>
+          <span class="plan__price-num">¥300,000</span>
+          <span class="plan__price-unit">〜</span>
+        </div>
+        <p class="plan__lead">集客と問い合わせ獲得を前提とした、現代的なWebサイト。</p>
+        <ul class="plan__list">
+          <li>WordPress / Next.js 最適選定</li>
+          <li>業種別コンテンツテンプレ</li>
+          <li>Core Web Vitals Good</li>
+          <li>運用・保守プラン</li>
+        </ul>
+      </article>
+
+      <article class="plan plan--featured">
+        <header class="plan__head">
+          <span class="plan__step">STEP 02</span>
+          <h3>AIチャットボット</h3>
+          <span class="plan__badge">★ 人気</span>
+        </header>
+        <div class="plan__price">
+          <span class="plan__price-from">FROM</span>
+          <span class="plan__price-num">¥100,000</span>
+          <span class="plan__price-unit">〜</span>
+        </div>
+        <p class="plan__lead">質問するだけで記事が書ける投稿ツール。WordPress 更新が止まる、を解決。</p>
+        <ul class="plan__list">
+          <li>対話式UI（8ステップ）</li>
+          <li>SEO最適化＋競合分析</li>
+          <li>3つのチェックポイント</li>
+          <li>PC / モバイル両対応</li>
+        </ul>
+      </article>
+
+      <article class="plan">
+        <header class="plan__head">
+          <span class="plan__step">STEP 03</span>
+          <h3>DX・ML</h3>
+        </header>
+        <div class="plan__price">
+          <span class="plan__price-from">FROM</span>
+          <span class="plan__price-num">¥500,000</span>
+          <span class="plan__price-unit">〜</span>
+        </div>
+        <p class="plan__lead">ML実装 / 業務自動化 / データ分析基盤 / 生成AI業務組み込み。</p>
+        <ul class="plan__list">
+          <li>Computer Vision / RAG</li>
+          <li>業務自動化エージェント</li>
+          <li>Human-in-the-loop 設計</li>
+          <li>内製化引き継ぎ</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="pricing__note">
+      ※ 上記は目安です。プロジェクトの規模・期間に応じて柔軟にご提案します。営業のための営業はしません。
+    </p>
+  </div>
+</section>
+
+
+<!-- ───────────── FAQ ───────────── -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__tag">
+        <span>08</span>
+        <span>FAQ — よくあるご質問</span>
+      </div>
+      <h2 class="section-head__h2">迷いやすいポイント、<br />先に<em>お答えします</em>。</h2>
+    </div>
+    <div id="faq-mount"></div>
+  </div>
+</section>
+
+
+<!-- ───────────── FINAL CTA + FORM ───────────── -->
+<section class="cta" id="contact">
+  <div class="container cta__container">
+
+    <div class="cta__left">
+      <div class="eyebrow eyebrow--light">
+        <span class="eyebrow__dot"></span>
+        <span>FINAL STEP — まずは無料で資料請求</span>
+      </div>
+      <h2 class="cta__h2">
+        Web制作・AI・DX、<br />
+        御社の<em>次の一手</em>を<br />
+        24時間以内にご返信。
+      </h2>
+      <p class="cta__lead">
+        Web制作・AIチャットボット・DX/ML のサービス資料をお送りします。営業日24時間以内に担当者よりご返信します。
+      </p>
+
+      <ul class="cta__assure">
+        <li><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor"/><path d="M5 8.4l2 2 4-4.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>営業日24時間以内に一次返信</li>
+        <li><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor"/><path d="M5 8.4l2 2 4-4.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>オンラインで全国対応</li>
+        <li><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor"/><path d="M5 8.4l2 2 4-4.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>営業のための営業はしません</li>
+        <li><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor"/><path d="M5 8.4l2 2 4-4.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>ご相談内容は厳格に管理します</li>
+      </ul>
+
+      <div class="cta__alt" id="diagnosis">
+        <strong>ホームページ無料診断</strong>
+        <span>30項目チェックリストで現状把握。資料請求とあわせてどうぞ。</span>
+      </div>
+    </div>
+
+    <form class="cta__form" onsubmit="event.preventDefault(); this.querySelector('.form__sent').hidden = false; this.querySelector('.form__inner').hidden = true;">
+      <div class="form__inner">
+        <div class="form__head">
+          <span class="form__step">資料請求フォーム</span>
+          <span class="form__time">所要時間 約60秒</span>
+        </div>
+
+        <div class="field">
+          <label>貴社名<span>*</span></label>
+          <input type="text" placeholder="株式会社○○" required />
+        </div>
+        <div class="field field--row">
+          <div>
+            <label>ご担当者名<span>*</span></label>
+            <input type="text" placeholder="山田 太郎" required />
+          </div>
+          <div>
+            <label>役職（任意）</label>
+            <input type="text" placeholder="代表取締役" />
+          </div>
+        </div>
+        <div class="field field--row">
+          <div>
+            <label>メールアドレス<span>*</span></label>
+            <input type="email" placeholder="name@example.com" required />
+          </div>
+          <div>
+            <label>電話番号<span>*</span></label>
+            <input type="tel" placeholder="075-000-0000" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>ご興味のあるサービス<span>*</span></label>
+          <div class="chips">
+            <label><input type="checkbox" name="svc" /><span>Web制作</span></label>
+            <label><input type="checkbox" name="svc" /><span>AIチャットボット</span></label>
+            <label><input type="checkbox" name="svc" /><span>DX・ML</span></label>
+            <label><input type="checkbox" name="svc" /><span>業務自動化</span></label>
+            <label><input type="checkbox" name="svc" /><span>LP制作</span></label>
+            <label><input type="checkbox" name="svc" /><span>採用サイト</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>ご相談内容（任意）</label>
+          <textarea rows="3" placeholder="現状の課題や、特に相談したいポイントをご記入ください。"></textarea>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" required />
+          <span>個人情報の取扱いに同意します（<a href="#">プライバシーポリシー</a>）</span>
+        </label>
+
+        <button type="submit" class="btn btn--primary btn--block">
+          <span>無料で資料請求する</span>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+
+        <p class="form__note">送信後、自動返信メールが届きます。1営業日以内に届かない場合は迷惑メールフォルダをご確認ください。</p>
+      </div>
+
+      <div class="form__sent" hidden>
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14 24l8 8 16-16" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>送信が完了しました</h3>
+        <p>ご請求ありがとうございます。1営業日以内に担当者よりご返信いたします。</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<!-- ───────────── FOOTER ───────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#top" class="nav__brand" aria-label="NORTIQ LABS">
+          <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect x="2" y="2" width="28" height="28" rx="6" fill="currentColor"/>
+            <path d="M9 22V10l14 12V10" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+          </svg>
+          <span class="nav__word">NORTIQ <em>LABS</em></span>
+        </a>
+        <p class="footer__tag">日本のDX、世界水準で巻き返す。<br />Web制作からAI・DX実装までの技術チーム。</p>
+        <p class="footer__addr">
+          株式会社TAKE（屋号：NORTIQ LABS）<br />
+          京都府京都市 ・ 2025年設立 ・ チーム5名<br />
+          平日 10:00–18:00 ／ info@nortiqlab.com
+        </p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="#services">Web制作</a></li>
+            <li><a href="#services">AIチャットボット</a></li>
+            <li><a href="#services">DX・ML</a></li>
+            <li><a href="#services">LP制作 / LPO</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>事例</h4>
+          <ul>
+            <li><a href="#cases">クリニック・医療</a></li>
+            <li><a href="#cases">不動産</a></li>
+            <li><a href="#cases">建築・工務店</a></li>
+            <li><a href="#cases">越境EC</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>会社情報</h4>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">チーム / スタッフ</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#pricing">料金プラン</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>自社プロダクト</h4>
+          <ul>
+            <li><a href="#">VetoNet (AI Security)</a></li>
+            <li><a href="#">WP AIチャットボット</a></li>
+            <li><a href="#">Tennis フォームチェック</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>法的情報</h4>
+          <ul>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">個人情報の取扱い</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 株式会社TAKE / NORTIQ LABS. All rights reserved.</span>
+      <span class="footer__motto">Built in Kyoto · Engineered with U.S. discipline</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<div id="tweaks-root"></div>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+
+</body>
+</html>

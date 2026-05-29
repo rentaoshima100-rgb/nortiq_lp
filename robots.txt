@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nortiqlab.com/sitemap.xml

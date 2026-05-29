@@ -1,0 +1,17 @@
+# 公開しない社内資料・ドキュメント（料金戦略・法務雛形・広告KW など）
+uploads/
+
+# 配信しない代替版・単一ファイル書き出し版
+NORTIQ-LP-standalone.html
+index-v1-warm-editorial.html
+styles-v1.css
+
+# 開発用ファイル（本番では未使用 — FAQ は静的HTML+インラインJSへ移行、Tweaksパネルは開発専用）
+app.jsx
+tweaks-panel.jsx
+
+# 雑多なもの
+*.zip
+DEPLOY.md
+_*.png
+_shots/

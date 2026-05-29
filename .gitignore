@@ -1,0 +1,13 @@
+# Vercel project linkage
+.vercel
+
+# Confidential internal material — must NOT be published (this repo is public)
+uploads/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Node
+node_modules/
